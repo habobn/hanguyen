@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="phong" >
+		<div id="tab">
+			<div class="menu">
+				<div class="child-tab" id="ctab1" onclick="change1()">
+					<p class="tab">Tab 1</p>
+				</div>
+				<div class="child-tab" id="ctab2" onclick="change2()">
+					<p class="tab">Tab 2</p>
+				</div>
+				<div class="child-tab" id="ctab3" onclick="change3()">
+					<p class="tab">Tab 3</p>
+				</div>
+			</div>
+			<div id="section1">
+				<h3>Section 1</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt autem nostrum eum dolorem mollitia non illo omnis eaque quisquam nisi. Aut nihil, odio assumenda explicabo voluptatem officia at quo temporibus sint repudiandae recusandae. Tenetur.</p>
+			</div>
+			<div id="section2">  
+				<h3>Section 2</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, pariatur, aliquam. Cupiditate repudiandae corporis repellat aliquam illum at, labore dolor?</p>
+			</div>
+			<div id="section3">
+				<h3>Section 3</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, voluptatem. Optio laudantium sequi eaque debitis!</p>
+			</div>
+			
+		</div>
+	</div>
+	<script type="text/javascript">
+		var section1 = document.getElementById('section1');
+		var section2 = document.getElementById('section2');
+		var section3 = document.getElementById('section3');
+		var ctab1 = document.getElementById('ctab1');
+		var ctab2 = document.getElementById('ctab2');
+		var ctab3 = document.getElementById('ctab3');
+		
+		function change1(){
+			
+					ctab1.addEventListener('click', function(){
+					this.style.background = 'white';
+					this.style.color = 'black';
+					section1.style.display = 'block';
+					section1.style.background = 'white';
+					section2.style.display = 'none';
+					section3.style.display = 'none';
+					ctab2.style.background = '#635e5e';
+					ctab3.style.background = '#635e5e';
+					ctab2.style.color = 'white';
+					ctab3.style.color = 'white';
+				})
+				
+			}
+		
+		function change2(){
+					ctab2.addEventListener('click', function(){
+					this.style.background = 'white';
+					this.style.color = 'black';
+					section2.style.display = 'block';
+					section2.style.background = 'white';
+					section1.style.display = 'none';
+					section3.style.display = 'none';
+					ctab1.style.background = '#635e5e';
+					ctab3.style.background = '#635e5e';
+					ctab1.style.color = 'white';
+					ctab3.style.color = 'white';
+				})
+				
+			}
+		
+		function change3(){
+					ctab3.addEventListener('click', function(){
+					this.style.background = 'white';
+					this.style.color = 'black';
+					section3.style.display = 'block';
+					section3.style.background = 'white';
+					section1.style.display = 'none';
+					section2.style.display = 'none';
+					ctab1.style.background = '#635e5e';
+					ctab2.style.background = '#635e5e';
+					ctab1.style.color = 'white';
+					ctab2.style.color = 'white';
+				})
+			}
+	</script>
+</body>
+</html>

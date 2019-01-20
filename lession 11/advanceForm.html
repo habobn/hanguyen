@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Advance form</title>
+	<link rel="stylesheet" href="css/advanceForm.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script src="advanceForm.js"></script>
+	
+</head>
+<body>
+	<div class="container">
+		<h1>Basic Form Example</h1>
+		<button class="tab tabactive" id="tab_1">1. Account</button>
+		<button class="tab" id="tab_2">2. Profile</button>
+		<button class="tab" id="tab_3">3. Hints</button>
+		<button class="tab" id="tab_4">4. Finish</button>
+		<div class="content contentactive">
+			<p>Username * </p>
+			<input type="text" class="name"> <span class="nameerr"></span>
+			<p>Password * </p>
+			<input type="password" class="pass"> <span class="passerr"></span>
+			<p>Confirm Password * </p>
+			<input type="password" class="repass"> <span class="repasserr"></span>
+		</div>
+
+		<div class="content ">
+			<p>First name * </p>
+			<input type="text" class="fname"> <span class="fnameerr"></span>
+			<p>Last name * </p>
+			<input type="text" class="lname"> <span class="lnameerr"></span>
+			<p>Email * </p>
+			<input type="email" class="email"> <span class="emailerr"></span>
+			<p>Address * </p>
+			<input type="text" class="address"> <span class="addresserr"></span>
+			<p>Age *</p>
+			<input type="number" class="age"> <span class="ageerr"></span>
+		</div>
+		<div class="content">
+			<p>Please go away =)))</p>
+		</div>
+		<div  class="content">
+			<input type="checkbox">
+			<p>agree condition to continue</p>
+		</div>
+		<div class="confirm">
+			<button class="previous">Previous</button>
+			<button class="next buttonactive">Next</button>
+			
+		</div>
+	</div>
+</body>
+</html>
+
+
+

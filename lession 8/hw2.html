@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+	<div id="all-content">
+		<div class="content"> 
+			<div class="left">
+				<input class="check" type="checkbox" name="">
+			</div>
+			<div class="right">
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="left">
+				<input class="check" type="checkbox" name="">
+			</div>
+			<div class="right">
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="left">
+				<input class="check" type="checkbox" name="">
+			</div>
+			<div class="right">
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="left">
+				<input class="check" type="checkbox" name="">
+			</div>
+			<div class="right">
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="left">
+				<input class="check" type="checkbox" name="">
+			</div>
+			<div class="right">
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="left">
+				<input class="check" type="checkbox" name="">
+			</div>
+			<div class="right">
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="left">
+				<input class="check" type="checkbox" name="">
+			</div>
+			<div class="right">
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="left">
+				<input class="check" type="checkbox" name="">
+			</div>
+			<div class="right">
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+	</div>
+	<div id="choose">
+		
+		<input type="button" name="" value="Check all" onclick="checkall()">
+		<input type="button" name="" value="Uncheck all" onclick="uncheckall()">
+	</div>
+	<script type="text/javascript">
+		
+		var content = document.getElementsByClassName("content");
+		for (var i = 0; i < content.length; i++) {
+			content[i].addEventListener('mouseover',function(){
+				this.style.background = '#04B431';
+			})
+			
+		}
+		for (var i = 0; i < content.length; i++) {
+			content[i].addEventListener('mouseout', function(){
+				this.style.background = '#a3bec5';
+			})
+		}
+		
+		function checkall(){
+			var cb = document.getElementsByClassName("check");
+			for (var i = 0; i < 8; i++) {
+				
+				cb[i].checked = true;
+			}
+		}
+		function uncheckall(){
+			var cb = document.getElementsByClassName("check");
+			for (var i = 0; i < 8; i++) {
+			
+				cb[i].checked = false;
+			}
+		} 
+	</script>
+</body>
+</html>

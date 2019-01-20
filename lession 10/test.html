@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+
+  /*  body{
+        width:50%;
+        margin-left:25%;
+    }
+    #header{
+        background:#FF6262;
+        text-align:center;
+
+    }
+    .header-first{
+        width:100%;
+        padding-top:1%;
+        color:white;
+    }
+    .header-last{
+        width:90%;
+        display:inline-block;
+        padding-bottom:3%;
+    }
+    .text{
+        width:90%;
+        height:20px;
+    }
+    .add{
+        font-size:20px;
+        background:#ccc;
+        border:1px solid b;
+    }
+
+    
+
+    
+    ul {
+        list-style:none;
+      margin: 0;
+      padding: 0;
+    }
+    ul li {
+      cursor: pointer;
+      position: relative;
+      padding: 12px 8px 12px 40px;
+      background: #eee;
+      font-size: 18px;
+      transition: 0.2s;
+
+
+    }
+    
+    ul li:nth-child(odd) {
+         background: #f9f9f9;
+    }
+    ul li:hover {
+  background: #ddd;
+    }
+    ul li.checked {
+         background: #888;
+         color: #fff;
+         text-decoration: line-through;
+    }
+    ul li.checked::before {
+     content: '';
+     position: absolute;
+     border-color: #fff;
+     border-style: solid;
+      border-width: 0 2px 2px 0;
+      top: 10px;
+      left: 16px;
+      transform: rotate(45deg);
+     height: 15px;
+     width: 7px;
+    }
+    .close {
+      position: absolute;
+     right: 0;
+     top: 0;
+    padding: 12px 16px 12px 16px;
+    }
+    .close:hover {
+          background-color: #f44336;
+         color: white;
+    }*/
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" >
+			$(document).ready(function(){
+			$(".add").click(function(){
+				var text =$(".text").val();
+				$("li").append('<p> <i class="fa fa-check check"  ></i>'+text+ '<i class="fa fa-times delete"></i></p>');//prepend()
+				$(".text").val("");
+			});
+		});
+		$(document).on("click",".delete",function(){
+			$(this).parent().remove();
+		});
+		
+		
+	</script>
+</head>
+<body>
+	<div id="header">
+		<div class="header-first">
+			<h2>My To Do List</h2>
+		</div>
+		<div class="header-last">
+			<input type="text" name="text" class="text" placeholder="Title...">
+			<button class="add">Add</button>
+		</div>
+	</div>
+	<ul id="footer">
+		<li class="work"></li>
+	</ul>
+	
+
+	
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style3.css">
+
+
+
+</head>
+<body>
+	<div id="setting">
+		<p>Cỡ chữ</p>
+		<input type="button" class="mac_dinh" name="default" value="Mặc định" onclick="mac_dinh()">
+		<input type="button" name="lon" value="Tăng" onclick="increase()">
+		<input type="button" name="nho" value="Giảm" onclick="decrease()">
+	</div>
+	<div id="main">
+	<span id="text" style="font-size: 20px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</span>
+	</div>
+	
+	<script type="text/javascript">
+		function increase(){		
+			var a = document.getElementById("text").style.fontSize;
+			var b = a.replace('px','');
+			var c = parseFloat(b);
+			document.getElementById("text").style.fontSize = (c + 4) + "px";
+		}
+		function decrease(){
+			var a = document.getElementById("text").style.fontSize;
+			var b = a.replace('px','');
+			var c = parseFloat(b);
+			document.getElementById("text").style.fontSize = (c - 4) + "px";
+		}
+
+		function mac_dinh(){
+			 document.getElementById("text").style.fontSize="20px";
+		}
+	</script>
+
+</body>
+</html>

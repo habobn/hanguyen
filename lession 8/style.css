@@ -1,0 +1,58 @@
+#phong{
+	background-color: greenyellow;
+			width: 80%;
+			margin: 0 auto;
+			border: 1px solid black;
+			height: 300px;
+
+
+}
+#tab{
+	 padding-top: 5%;
+    text-align: center;
+    width: 100%;
+}
+.menu{
+	display:inline-block;
+	width:50%;
+	
+
+}
+.menu-tab{
+	background-color:white;
+	color: black;
+	padding:1%;
+
+}
+
+.child-tab{
+			width: 30%;
+			display: inline-block;
+			background-color: #635e5e;
+			color: white;
+		}
+		#section1{
+			display: none;
+			border: 1px solid white;
+			display: none;
+		    background: white;
+		    height: 120px;
+		    padding-left: 10px;
+
+		}
+		#section2{
+			display: none;
+			border: 1px solid white;
+			display: none;
+		    background: white;
+		    height: 120px;
+		    padding-left: 10px;
+		}
+		#section3{
+			display: none;
+			border: 1px solid white;
+			display: none;
+		    background: white;
+		    height: 120px;
+		    padding-left: 10px;
+		}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			border-radius: 100px;
+			background: red; 
+			animation-name: quynhbupbe;
+			 /*-webkit-animation-name: quynhbupbe;//safari
+			-o-animation-name: quynhbupbe;//opera
+			-moz-animation-name: quynhbupbe;//firefox
+			-ms-animation-name: quynhbupbe;//mcs */
+			animation-duration: 3s;
+			position: relative;
+			animation-iteration-count: infinite;
+			transform: rotate(30deg);
+
+		}
+		@keyframes quynhbupbe{
+			0%{
+				top:0px;
+				left: 0px;
+				background: red;
+			}
+			25%{
+				top:0px;
+				left: 1000px;
+				background:greenyellow;
+			}
+			50%{
+				top:1000px;
+				left: 1000px;
+				background:green;
+			}
+			75%{
+				top: 1000px;
+				left: 0px;
+				background: blue;
+			}
+			100%{
+				top:0px;
+				left: 0px;
+				background: yellow;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div>
+		
+	</div>
+	
+</body>
+</html>

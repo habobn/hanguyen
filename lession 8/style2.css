@@ -1,0 +1,38 @@
+#all-content{
+			background-color: #a3bec5;
+			width: 40%;
+			margin: 0 auto;
+		
+			border: 1px solid #8c8080;
+
+		}
+		.content{
+			border: 1px solid #8c8080;
+			height: 50px;
+			
+		}
+		.left{
+			width: 10%;
+			float: left;
+			border-right: 1px solid #8c8080;
+			text-align: center;
+			height: 50px;
+
+		}
+		.right{
+			width: 85%;
+			float: left;
+		
+			height: 50px;
+		}
+		.check{
+			margin-top: 20px;
+		}
+		.text{
+			margin-left: 20px;
+		}
+		#choose{
+			width: 40%;
+			margin: 0 auto;
+			padding-top: 10px;
+		}

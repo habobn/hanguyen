@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#header{
+	width: 100%;
+	height: 45px;
+	background-color: #78b43d;
+}
+
+#header .container{
+	width: 90%;
+	height: 100px;
+	margin: 0 auto;
+
+}
+#danhmuc{
+	margin: 5px;
+	text-align: center;
+	border-right: 1px solid white;
+	color: white;
+	
+
+}
+.text{
+	padding-right: 5px;
+}
+#logo{
+	margin: 5px;
+	border-right: 1px solid white;
+	padding-right: 10px;
+}
+
+ul{
+	list-style: none;
+}
+.container > *, .container li{
+	float: left;
+}
+.home{
+	color: white;
+	font-size: 40px !important;
+}
+.item{
+	margin: 5px;
+	text-align: center;
+}
+#search{
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+	margin: 5px;
+	font-size: 30px;
+	    padding: 5px 10px 5px;
+}
+#menu{
+	color: white;
+}
+#menu-12{
+	display: none;
+}
+.menu1 :hover #menu-12{
+	display: block;
+}

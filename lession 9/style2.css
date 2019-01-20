@@ -1,0 +1,27 @@
+#container .tab{
+	width:30%;
+    margin:1px;
+    background:orange;
+
+}
+#container{
+	position: relative;
+	
+}
+#container .content{
+	margin-top:10px;
+    position:absolute;
+    top:10px;
+    left:10px;
+    width: 50%;
+	height: 50px;
+	display:none;
+}
+#container .active .tab{
+	margin-bottom:20px;
+	background:red; 
+}
+#container .active .content{
+	display:block;
+	margin-top:9px;
+}

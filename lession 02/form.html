@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+</head>
+<body>
+	<form name="register">
+		<input type="text" name="firstName" value="" placeholder="Nhập họ và tên...">
+		<br>
+		Java:<input type="checkbox" name="subject" value="Java">
+		PHP:<input type="checkbox" name="subject" value="PHP">
+		NodeJS:<input type="checkbox" name="subject" value="NodeJS" checked>
+		<br>
+		Male:<input type="radio" name="gender" value="Male" placeholder="">
+		Female<input type="radio" name="gender" value="Female" placeholder="" checked>
+		<br>
+		<input type="file" name="upload" value="" placeholder="">
+		<br>
+		<input type="button" name="btn" value="Click here">
+		<br>
+		Email: <input type="email" name="email" value="" placeholder="abc@gmail.com">
+		<br>
+		Password: <input type="password" name="password" value="">
+		<br>
+		<select name="course" multiple="" >
+			<option value="Khóa Java">Khóa Java</option>
+			<option value="Khóa PHP">Khóa PHP</option>
+			<option value="Khóa NodeJS">Khóa NodeJS</option>
+
+		</select>
+		.<br>
+		<select name="course" >
+			<option selected>Giới Tính </option>
+			<option value="1">Nam</option>
+			<option value="0">Nữ</option>
+		</select>
+		<br>
+		<textarea name="textarea" rows="5" cols="40">
+Nhập thông tin vào đây
+		</textarea>
+		<br>
+		<input type="date" name="brithday" value="">
+	</form>
+</body>
+</html>

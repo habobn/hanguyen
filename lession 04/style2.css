@@ -1,0 +1,87 @@
+#all{
+	width: 100%;
+	height: 600px;
+	
+}
+#menu{
+	width: 100%;
+	height: 40px;
+	background-color: #78b43d;
+	border-right: 0.5px solid white ;
+
+	
+}
+ul{
+	list-style: none;
+}
+.menu1{
+	float: left;
+	padding: 5px;
+	border-right: 0.5px solid white ;	
+	font-size: 20px ;
+	text-align: left;
+	color: white;
+	list-style: none;
+
+
+}
+.bars{
+	font-size: 25px !important;
+}
+.home{
+	font-size: 40px !important;
+
+}
+.search{
+	float: right;
+	font-size: 35px !important;
+	border-right: none;
+}
+.game{
+	border-right: none;
+}
+.menu2{
+	background-color: #CCFF66;
+	border-top: 1px solid green;
+	display: none;
+	color: black;
+	height: 60px;
+	
+	
+}
+.menu1:hover .menu2{
+	display: block;
+
+}
+.home1{
+	color: white;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+.menu3{
+	 background-color: #78b43d;
+	 border-top: 1px solid green;
+	 display: none;
+	 color: black;
+	 height: 50px;
+	 
+
+}
+.menu2:hover .menu3 {
+	display: block;
+	background-color:#78b43d;
+}
+.menu2-2{
+	position: absolute;
+	top:55px;
+	left:55px;
+}
+#menu3{
+	position: absolute;
+	top: 125px;
+	left: 168px;
+	width:200px;
+
+}

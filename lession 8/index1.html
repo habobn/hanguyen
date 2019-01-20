@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+<body>
+	<span id="content" >
+	</span>
+	<img src="../lession 05/img/vouchercodedeals.com.png" >
+	<input id="txt" type="text" name="">
+	<span id="content" >
+	</span>
+	<input class="size" type="button" name="" value="tăng" onclick="increase()">
+	<input class="size" type="button" name="" value="giảm" onclick="decrease()">
+	
+	<script type="text/javascript">
+		var txt = document.getElementById("txt");
+		txt.addEventListener("focus",change);
+		txt.addEventListener("blur",reset);
+
+		 var img = document.getElementsByTagName("img")[0];
+		 img.addEventListener("mouseover",increase);
+		 img.addEventListener("mouseout",decrease);
+
+
+		function change(){
+			var txt = document.getElementById("txt");
+			txt.style.background='orange';
+
+		}
+		function reset(){
+			var txt = document.getElementById("txt");
+			txt.style.background='white';
+		}
+		function decrease(){
+			var img =document.getElementsByTagName("img")[0];
+			var width = img.width;
+			var height = img.height;
+			img.width = width/1.2;
+			img.height = height/1.2;
+			img.style.border ="5px solid black";
+			img.style.opacity='0.5';
+		}
+		function increase(){
+			var img =document.getElementsByTagName("img")[0];
+			var width = img.width;
+			var height = img.height;
+			img.width = width*1.2;
+			img.height = height*1.2;
+			img.style.border ="";
+			img.style.opacity='1';
+		}
+		
+	</script>	
+</body>
+</html>
