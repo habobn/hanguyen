@@ -567,8 +567,7 @@ li{
     background-color:black;
     color:white;
     font-size:20px;
-    width:5%;
-
+    width: 10%;
   }
 
   .hover-show:hover {
